@@ -31,7 +31,7 @@ describe('Employee', () => {
       const id = 300;
       const phil = new Employee("Phil", id, "phil@test.com");
 
-      expect(phil.getName()).toEqual(id);
+      expect(phil.getId()).toEqual(id);
     });
   });
 

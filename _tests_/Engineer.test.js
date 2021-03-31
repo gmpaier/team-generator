@@ -13,7 +13,7 @@ describe('Engineer', () => {
       expect(mark.name).toEqual(name);
       expect(mark.id).toEqual(id);
       expect(mark.email).toEqual(email);
-      expect(mark.gihub).toEqual(github);
+      expect(mark.github).toEqual(github);
     });
   });
 

@@ -13,7 +13,7 @@ describe('Intern', () => {
       expect(grif.name).toEqual(name);
       expect(grif.id).toEqual(id);
       expect(grif.email).toEqual(email);
-      expect(grif.gihub).toEqual(school);
+      expect(grif.school).toEqual(school);
     });
   });
 
