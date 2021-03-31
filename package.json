@@ -4,7 +4,7 @@
   "description": "program which takes user inputs for employee information from the terminal and creates an html webpage based on the response. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -12,8 +12,10 @@
   },
   "author": "Griffin Paier",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gmpaier/team-generator/issues"
+  "devDependencies": {
+    "jest": "^24.9.0"
   },
-  "homepage": "https://github.com/gmpaier/team-generator#readme"
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
