@@ -1,0 +1,13 @@
+.team-header {
+    text-align: center;
+    color: white;
+    background-color: lightpink;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main {
+    margin-left: 15px;
+    margin-right: 15px;
+}
