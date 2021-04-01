@@ -7,8 +7,10 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+  //holds employee objects
 const employeeList = [];
 
+  //initial function, prompts for manager information, creates a new manager, then triggers addNew()
 async function addManager() {
     try{
       const {name, id, email, office} = await inquirer.prompt([
@@ -39,7 +41,7 @@ async function addManager() {
     }
     
 }
-
+  //Essentially this function is an options prompt, triggering either addEngineer, addIntern, or postData.
 async function addNew(){
   try{
     const {response} = await inquirer.prompt([
@@ -67,7 +69,7 @@ async function addNew(){
     console.log("Error in addNew")
   }
 }
-
+  //prompts for Engineer information, creates a new Engineer object, and then triggers addNew()
 async function addEngineer(){
   try{
     const {name, id, email, github} = await inquirer.prompt([
@@ -97,7 +99,7 @@ async function addEngineer(){
     console.log("Error in addEngineer")
   }
 }
-
+  //prompts for Intern information, creates a new Intern object, then triggers addNew()
 async function addIntern(){
   try{
     const {name, id, email, school} = await inquirer.prompt([
@@ -127,7 +129,7 @@ async function addIntern(){
     console.log("Error in addIntern")
   }
 }
-
+  //formats employee objects into cards and then writes data to index.html
 async function postData(){
 try{
 let content = "";
@@ -208,8 +210,6 @@ catch(err){
 }
 }
 
-
-
-
+  //triggers addManager on startup
 addManager();
 
